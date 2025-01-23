@@ -1,23 +1,23 @@
-# Module 07 - La table de jointure
-<a href="../00 Les fichiers PDF - Supports de cours/07 La table de jointure.pdf">
-  <img src="../img/07/m7.png" width="300">
+# Module 08 - La table de jointures
+<a href="../00 Les fichiers PDF - Supports de cours/08 La table de jointures.pdf">
+  <img src="../img/mod/m8.webp" width="300">
 </a>  
 <br>
-<a href="../00 Les fichiers PDF - Supports de cours/07 La table de jointure.pdf">
-07 La table de jointure
+<a href="../00 Les fichiers PDF - Supports de cours/08 La table de jointures.pdf">
+Le PDF : 08 La table de jointures
 </a> 
       
 <br><br>    
 
-![film](../img/13/once.webp)
-![db](../img/07/fight-club.webp)
+<img src="../img/tp/td7/once.webp" width="80"> <img src="../img/tp/td7/fight-club.webp" width="80"> 
+
 ## Le modèle relationnel
-<img src="../img/05/film_has_acteur.svg" width="800">
+<img src="../img/db-svg/09-film_has_acteur.png" width="800">
 
 ## Les données
-![db2](../img/13/data.png)
+<img src="../img/xl/05-jointure.png" width="800">
   
-![film](../img/13/once2.jpg)
+<img src="../img/tp/td7/once2.jpg" width="200">
 
 
 ## La Base de données

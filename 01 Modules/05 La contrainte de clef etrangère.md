@@ -1,23 +1,25 @@
 # Module 05 - Mise en place de la contrainte de clef etrangère
 
-<a href="../00 Les fichiers PDF - Supports de cours/05 La clef étrangère.pdf">
-  <img src="../img/05/m5.png" width="300">
+<a href="../00 Les fichiers PDF - Supports de cours/05 La contrainte de clef étrangère.pdf">
+  <img src="../img/mod/m5.webp" width="300">
 </a>  
 <br>
-<a href="../00 Les fichiers PDF - Supports de cours/05 La clef étrangère.pdf">
-05 La clef étrangère
+<a href="../00 Les fichiers PDF - Supports de cours/05 La contrainte de clef étrangère.pdf">
+Le PDF : 05 La contrainte de clef étrangère
 </a> 
 
 <br>
 <br>
      
+<img src="../img/tp/td5/jointure.png" width="600">
   
-<img src="../img/05/fruit.svg" width="600">
-  
-  
-<img src="../img/10/salade.png" width="600">
+<img src="../img/xl/01-salade.png" width="600">
 
-
+# Relation clef étrangère :
+**Many to One** et **One To many**
+    
+Un fruit à une seule couleur : <code>Many to One</code>  
+Une couleur est posséder par plusieurs fruits <code>One to Many</code> 
 
 
 ## Une clef étrangère ?
@@ -26,12 +28,39 @@
   - je viens vérifier que l'id ajouter est bien un id de clef primaire existant.  
   - La clef étragère <code>couleur_id</code> de la table fruit doit correspondre à la clef primaire <code>id</code> de couleur  
 
-# relation clef étrangère :
-**Many to One** et **One To many**
-Un fruit à une seule couleur : **Many to One**  
-Une couleur est posséder par plusieurs fruis **One to   Many** 
+## Violation de contrainte
+Je ne peux pas supprimer une couleur  
+Si la clef primaire est utilisée en clef étrangère
+  
+<img src="../img/tp/td5/violation-1.png" width="600"><br>
+  
+:warning:  Cette requête est bloquée  
+```sql
+DELETE FROM couleur WHERE id=1;
+```
+:one: $\color{red}{\text{Violation 1 de contrainte de clef étrangère}}$
+--------------------------
+Je ne peux pas insérer une clef étrangère   
+qui n'existe pas en tant que clef primaire  
+<img src="../img/tp/td5/violation-2.png" width="600"><br>
 
+:warning:  Cette requête est bloquée  
+```sql
+INSERT INTO fruit (nom,couleur_id) VALUES ('banane',4);
+```
+:two: $\color{red}{\text{Violation 2 de contrainte de clef étrangère}}$
+--------------------------
+Je ne peux pas Supprimer une table dont les clef primaire sont relié à une clef étrangère  
+Je doit supprimer fruit en premier   
+qui n'existe pas en tant que clef primaire  
+<img src="../img/tp/td5/violation-3.png" width="600"><br>
 
+:warning:  Cette requête est bloquée  
+```sql
+DROP TABLE couleur;
+```
+:three: $\color{red}{\text{Violation 3 de contrainte de clef étrangère}}$
+--------------------------
 
 ## Création des tables Version 1 :
 **Version 1** la clef étrangère est definit dans la table <code>fruit</code>
@@ -59,7 +88,7 @@ CREATE TABLE fruit (
     CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES couleur(id)
 )ENGINE=InnoDB;
 ```
-<img src="../img/05/fk.png" width="800">
+<img src="../img/tp/td5/fk.png" width="800">
   
 
 ## Création des tables Version 2 (bonne pratique) :heart_eyes: :
@@ -90,7 +119,7 @@ CREATE TABLE fruit (
 ALTER TABLE fruit ADD CONSTRAINT fk_couleur FOREIGN KEY fruit(couleur_id) REFERENCES couleur(id);
 
 ```
-<img src="../img/05/alter.png" width="800">
+<img src="../img/tp/td5/alter.png" width="800">
   
 
 ## Pour plus de clareté écrivez sur plusieur lignes
@@ -109,7 +138,7 @@ REFERENCES couleur(id)
 
 
 # Ajouter les données
-<img src="../img/10/salade.png" width="600">
+<img src="../img/xl/01-salade.png" width="600">
 
 ```sql
 USE salade_de_fruits; 

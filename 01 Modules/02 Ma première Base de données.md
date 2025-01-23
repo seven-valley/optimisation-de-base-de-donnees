@@ -1,32 +1,26 @@
 # Module 02 - Ma Première Base de données
 <a href="../00 Les fichiers PDF - Supports de cours/02 Ma première Base de données.pdf">
-  <img src="../img/02/m2.png" width="300">
+  <img src="../img/mod/m2.webp" width="300">
 </a>  
 <br>
 <a href="../00 Les fichiers PDF - Supports de cours/02 Ma première Base de données.pdf">
-02 Ma première Base de données.pdf
+Le PDF : 02 Ma première Base de données.pdf
 </a>  
-  
-## Dans PhpMyAdmin ouvrez le terminal SQL
-:one: Cliquez sur l'onglet SQL  
-:two: Saisir le code SQL   
-:three: Cliquez sur GO 
-   
-<img src="../img/02/terminal.webp" width="500"> 
 
-## OU dans Workbench ouvrez le terminal SQL
+
+## Dans Workbench ouvrez le terminal SQL
 :one: Cliquez sur l'onglet SQL    
 :two: Saisir le code SQL  
 :three:  Cliquez sur l'éclaire
 
-<img src="../img/02/terminal.png" width="500">     
+<img src="../img/screen/terminal.png" width="500">     
 
 
 ## Une documentation bien utile !
 https://www.w3schools.com/mysql/default.asp  
 https://sql.sh/  
 https://dev.mysql.com/doc/refman/8.4/en/select.html  
-
+[Tuto Learn sql](https://learnsql.fr/blog/20-exemples-de-requetes-sql-de-base-pour-les-debutants-une-vue-d-ensemble-complete/)  
 
 ## Création d'une base de données &#x1F600;
 Commande pour créer une base de données
@@ -39,7 +33,7 @@ Il est préférable de rajouter l'encodage **UTF8**:
 CREATE DATABASE videotheque CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-SI je souhaite créer la base si elle n'existe pas 
+Si je souhaite créer la base **si elle n'existe pas** 
 <code>IF NOT EXISTS</code>
   
 ```mysql
@@ -125,9 +119,17 @@ Autres  :
 | ENUM ('vert','rouge') | choix prédéfini  |
 
 # Exemple : Création d'une table film
-<img src="../img/02/film.svg" width="300">
-    
-  
+## Voici le modèle relationnel  
+<img src="../img/db-svg/01-film.png" width="200">
+
+## Exemple de données que pourra contenir la table film   
+<img src="../img/tp/td2/star.webp" width="80"> <img src="../img/tp/td2/matrix.webp" width="80"> <img src="../img/tp/td2/pulp.webp" width="80">
+
+| id | titre | sortie |
+|---|---|---|
+| 1 | STAR WARS | 1977/05/25 |
+| 2 | THE MATRIX | 1999/06/23 |
+| 3 | PULP FICTION | 1994/10/26 |  
   
 ## :key: Mise en place d'une clé primaire sur notre table
 La clef primaire : **primary key** ou **PK**  
@@ -136,12 +138,14 @@ Afin d'identifier une ligne de façon précise on définit une clef primaire
 La clef primaire peut être définit par MySQL **AI** ou **AUTO_INCREMENT**  
    
 :lock: La contrainte de clef primaire impose d'avoir qu'un seul ID  
-c'est à dire si je rentre le même ID  :MySQL me bloque 
-(violation de clef de contrainte de clef primaire)  
+c'est à dire si je rentre le même ID  : MySQL me bloque  
+**__Violation de clef de contrainte de clef primaire__**  
 Car je viole la contrainte de clef primaire  
   
 Nous rajoutons aussi la **contrainte de nullité**    
 Car notre id ne peut être null
+
+Enfin <code>AUTO_INCREMENT</code> Permet de demander à MYSQL d'attribuer l'ID  
 
 ```sql
 CREATE TABLE film (
@@ -160,7 +164,7 @@ CREATE TABLE film (
   id INT NOT NULL AUTO_INCREMENT,
   titre VARCHAR(255) NOT NULL,
   sortie DATE NOT NULL,
-  CONSTRAINT pk_film PRIMARY KEY (id)
+  CONSTRAINT pk_film PRIMARY KEY (id) # A la fin nous ajoutons un nom à la contrainte
 ) ENGINE=InnoDB;
 ```
 
@@ -171,9 +175,10 @@ CREATE TABLE film (
 ```sql
 
 CREATE TABLE film (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id INT NOT NULL AUTO_INCREMENT,
   titre VARCHAR(255) NOT NULL,
-  sortie DATE NOT NULL
+  sortie DATE NOT NULL,
+  CONSTRAINT pk_film PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 ```
 
@@ -204,7 +209,7 @@ USE videotheque;
 CREATE TABLE film (
     id INT NOT NULL AUTO_INCREMENT,
     titre VARCHAR(255) NOT NULL,
-    sortie DATE NOT NULL
+    sortie DATE NOT NULL,
     CONSTRAINT pk_film PRIMARY KEY(id)
 ) ENGINE=InnoDB; 
 ```
