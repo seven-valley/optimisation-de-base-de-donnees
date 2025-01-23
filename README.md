@@ -1,4 +1,4 @@
-# Plan de la formation - Les fondamentaux SQL
+# Plan de la formation - Optimisation de la base de données
 
 ## JOUR 1 MATIN
 <a href="./00 Les fichiers PDF - Supports de cours/02 Ma première Base de données.pdf">
