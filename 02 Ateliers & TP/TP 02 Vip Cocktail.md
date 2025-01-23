@@ -1,5 +1,5 @@
 # :cocktail: TP 2 - VIP Cocktail
-<img src="../../img/two.webp" width="100"> 
+<img src="../img/num/two.webp" width="100"> 
   
 Prise en main des commandes :  
   
@@ -11,9 +11,9 @@ Prise en main des commandes :
 <code>IF NOT EXISTS</code>   
    
 Nou allons créer une liste d'invités pour des soirées VIP  
-![brad](../../img/03/brad.webp)
-![george](../../img/03/george.webp)
-![jean](../../img/03/jean.webp)
+![brad](../img/tp/tp2/brad.webp)
+![george](../img/tp/tp2/george.webp)
+![jean](../img/tp/tp2/jean.webp)
   
 
 ## Partie 1 - Création de la table
@@ -42,3 +42,6 @@ Afin de vous aider  à choisir les types de champs
 :one: Créer une base de donnée : **invitation**  
 :two: Créer une table : **personne**  
 :three: Rajouter le prefixe <code>inv_</code> à votre table   
+
+## Le modèle relationnel
+<img src="../img/db-svg/03-personne.png" width="200">
