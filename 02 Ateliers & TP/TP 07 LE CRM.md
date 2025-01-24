@@ -115,6 +115,7 @@ et Avec <code>NOW()</code> [w3 school NOW()](https://www.w3schools.com/sql/func_
 :seven: Afficher les factures en retard de paiment **avec le nom du client**   
 30 jours max  
 Avec le nombre de jours de retard 
+
 |client| facture | nb_jour |
 |--- |--- |--- |
 |Mairie de Rennes|FA0002 |413|
