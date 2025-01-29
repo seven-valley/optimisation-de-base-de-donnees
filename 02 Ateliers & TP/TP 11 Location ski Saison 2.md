@@ -133,13 +133,13 @@ INSERT LignesFic VALUES(9934, 3, 'F21', GETDATE()-306, DATEADD(HH, 6, GETDATE()-
 
 :one: Liste des clients (nom, prénom, adresse, code postal, ville) ayant au moins une fiche de location en cours.   
 :two: Détail de la fiche de location de M. Dupond Jean de Paris (avec la désignation des articles loués, la date 
-de départ et de retour).  
+de départ et de retour).    
 :three: Liste de tous les articles (référence, désignation et libellé de la catégorie) dont le libellé de la catégorie 
-contient ski. 
-:four: Calcul du montant de chaque fiche soldée et du montant total des fiches. 
-:five: Calcul du nombre d’articles actuellement en cours de location. 
-:six: Calcul du nombre d’articles loués, par client. 
-:seven: Liste des clients qui ont effectué (ou sont en train d’effectuer) plus de 200€ de location. 
+contient ski.   
+:four: Calcul du montant de chaque fiche soldée et du montant total des fiches.   
+:five: Calcul du nombre d’articles actuellement en cours de location.   
+:six: Calcul du nombre d’articles loués, par client.   
+:seven: Liste des clients qui ont effectué (ou sont en train d’effectuer) plus de 200€ de location.   
 :eight: Liste de tous les articles (loués au moins une fois) et le nombre de fois où ils ont été loués, triés du plus 
 loué au moins loué. 
 
