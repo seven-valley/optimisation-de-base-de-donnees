@@ -143,8 +143,8 @@ contient ski.
 :eight: Liste de tous les articles (loués au moins une fois) et le nombre de fois où ils ont été loués, triés du plus 
 loué au moins loué. 
 
-:nine: Liste des fiches (n°, nom, prénom) de moins de 150€. 
-Le langage de requête SQL avec SQL Server 
+:nine: Liste des fiches (n°, nom, prénom) de moins de 150€.   
+
 **10** Calcul de la moyenne des recettes de location de surf (combien peut-on espérer gagner pour une location 
-d'un surf ?). 
+d'un surf ?).  
 **11** Calcul de la durée moyenne d'une location d'une paire de skis (en journées entières). 
