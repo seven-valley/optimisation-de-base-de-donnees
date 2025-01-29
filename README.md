@@ -1,13 +1,18 @@
-# Plan de la formation - Optimisation de la base de données
+# Plan de la formation - Les fondamentaux SQL
+<a href="./00 Les fichiers PDF - Supports de cours/00 Plan de la formation.pdf">
+  <img src="./img/mod/m0.webp" width="200" align="right">
+</a>  
+<br><br><br><br>
 
 ## JOUR 1 MATIN
 <a href="./00 Les fichiers PDF - Supports de cours/02 Ma première Base de données.pdf">
-  <img src="./img/02/m2.png" width="300">
+  <img src="./img/mod/m2.webp" width="200">
 </a>  
 <br>
 <a href="./00 Les fichiers PDF - Supports de cours/02 Ma première Base de données.pdf">
-Module 02 Ma première Base de données
+Le PDF : Module 02 Ma première Base de données
 </a>  
+<br>
   
 ### Création de la base données (data base)
 - Créer une base de données  
@@ -20,29 +25,37 @@ Module 02 Ma première Base de données
 - Créer une contrainte de nullité  
 - Mettre des valeurs par défault  
 
+$\color{blue}{\text{TP 01 Le monde des chats}}$  
+Création d'une table chat 
+  
+$\color{blue}{\text{TP 02 VIP Cocktail}}$  $\color{red}{\text{[BONUS]}}$   
+Création d'une table personne
+  
 
-**TP 01 VIP Cocktail** Création d'une table personne  
 
-**TP 02 Le monde des chats** Création d'une table chat
 ## JOUR 1 APRES MIDI
-<table border=0>
+
+
+
+
+<table>
 <tr>
-<td>
-<a href="./00 Les fichiers PDF - Supports de cours/03 Insertion des données.pdf">
-  <img src="./img/03/m3.png" width="300">
+<td width="50%">
+<a href="./00 Les fichiers PDF - Supports de cours/03 Insertion et modification des données.pdf">
+  <img src="./img/mod/m3.webp" width="200">
 </a>  
 <br>
-<a href="./00 Les fichiers PDF - Supports de cours/03 Insertion des données.pdf">
-Module 03 Insertion des données
+<a href="./00 Les fichiers PDF - Supports de cours/03 Insertion et modification des données.pdf">
+Le PDF : Module 03 Insertion et modification des données
 </a>  
 </td>
-<td>
+<td width="50%">
 <a href="./00 Les fichiers PDF - Supports de cours/04 Extraire les données.pdf">
-  <img src="./img/04/m4.png" width="300">
+  <img src="./img/mod/m4.webp" width="200">
 </a>  
 <br>
 <a href="./00 Les fichiers PDF - Supports de cours/04 Extraire les données.pdf">
-Module 04 Extraire les données
+Le PDF : Module 04 Extraire les données
 </a>  
 </td>
 
@@ -60,22 +73,37 @@ Module 04 Extraire les données
 - Filtrer avec **LIMIT**
 - Classer avec **ORDER BY**
 
- **TP 03 VIP Cocktail partie 2**
-Ajouter les données avec **INSERT**
-Afficher les données avec **SELECT**
-
- **TP 04 Le monde des chats partie 2** 
-Ajouter les données avec **INSERT**
-Afficher les données avec **SELECT**
+$\color{blue}{\text{TP 03 Le monde des chats partie 2}}$  
+Ajouter les données avec <code>INSERT</code>  
+Afficher les données avec <code>SELECT</code>  
+  
+$\color{blue}{\text{TP 04 VIP Cocktail partie 2}}$  $\color{red}{\text{[BONUS]}}$   
+Ajouter les données avec <code>INSERT</code>  
+Afficher les données avec <code>SELECT</code>  
 
 ## JOUR 2 MATIN
-<a href="./00 Les fichiers PDF - Supports de cours/05 La clef étrangère.pdf">
-  <img src="./img/05/m5.png" width="300">
+<table>
+<tr>
+<td width="50%">
+<a href="./00 Les fichiers PDF - Supports de cours/05 La contrainte de clef étrangère.pdf">
+  <img src="./img/mod/m5.webp" width="200">
 </a>  
 <br>
-<a href="./00 Les fichiers PDF - Supports de cours/05 La clef étrangère.pdf">
-Module 05 La clef étrangère
+<a href="./00 Les fichiers PDF - Supports de cours/05 La contrainte de clef étrangère.pdf">
+Le PDF : Module 05 La contrainte de clef étrangère
 </a>
+</td>
+<td width="50%">
+<a href="./00 Les fichiers PDF - Supports de cours/06 Les jointures.pdf">
+  <img src="./img/mod/m6.webp" width="200">
+</a>  
+<br>
+<a href="./00 Les fichiers PDF - Supports de cours/06 Les jointures.pdf">
+Le PDF : Module 06 Les jointures
+</a>
+</td>
+</tr>
+</table>
 
 ### La clef étrangère
 - Créer une clef étrangère  
@@ -87,44 +115,55 @@ Mettre en place des jointures pour extraires les données :
 - INNER JOIN  
 - LEFT JOIN  
 - RIGHT JOIN  
+
+
+$\color{blue}{\text{TP 05 Le monde des chats partie 3}}$  
+Mise en place de <code>INNER JOIN</code>  
   
-**TP 05 le monde des chats partie 3 avec clef étrangère**
-Afficher les chats avec leurs couleurs d'yeux 
+$\color{blue}{\text{TP 06 Films avec catégories}}$  $\color{red}{\text{[BONUS]}}$   
+Mise en place de <code>INNER JOIN</code>  
+
 
 ## Jour 2 APRES MIDI
-<a href="./00 Les fichiers PDF - Supports de cours/06 Les jointures.pdf">
-  <img src="./img/06/m6.png" width="300">
+<a href="./00 Les fichiers PDF - Supports de cours/07 Mise en place de plusieurs jointures.pdf">
+  <img src="./img/mod/m7.webp" width="200">
 </a>  
 <br>
-<a href="./00 Les fichiers PDF - Supports de cours/06 Les jointures.pdf">
-Module 06 Les jointures
-</a>
+<a href="./00 Les fichiers PDF - Supports de cours/07 Mise en place de plusieurs jointures.pdf">
+Le PDF : Module 07 Mise en place de plusieurs jointures
+</a>  
+<br>
   
-### TP 06 Films  avec clef étrangère 
-- Afficher les films avec les catégories
+### Les Jointures :
+Comment relier plusieurs table avec <code>INNER JOIN</code> et <code>LEFT JOIN</code> ?
 
-### TP 07 CRM : Devis & Factures 
-- Création des Tables
-- mettre en place les left join sur 3 tables  
-- Extraire les données avec plusieurs jointures  
+$\color{blue}{\text{TP 07 Le CRM : Devis et Factures}}$  
+Mise en place de plusieurs <code>INNER JOIN</code> et <code>LEFT JOIN</code>   
+Extraire les données avec plusieurs jointures  
+  
+
 
 ## Jour 3 MATIN
-<a href="./00 Les fichiers PDF - Supports de cours/07 La table de jointure.pdf">
-  <img src="./img/07/m7.png" width="300">
+<a href="./00 Les fichiers PDF - Supports de cours/08 La table de jointures.pdf">
+  <img src="./img/mod/m8.webp" width="200">
 </a>  
 <br>
-<a href="./00 Les fichiers PDF - Supports de cours/07 La table de jointure.pdf">  
-07 La table de jointure
+<a href="./00 Les fichiers PDF - Supports de cours/08 La table de jointures.pdf">
+Le PDF : Module 08 La table de jointure
 </a>
 
 ### Les Tables de jointures :
 - Créations d'une table de jointures
 - Mettre enplace une clef primaire sur 2 ID
 - Extraire les données  
-  
-**TP 08 Les films & Acteurs** Extraire les données  
-## Jour 3 APRES MIDI
 
-**TP 09 Site E-commerce**
-Insérer les données  
+$\color{blue}{\text{TP 08 Les films et Acteurs}}$  
 Extraire les données  
+
+## Jour 3 APRES MIDI
+$\color{blue}{\text{TP 09 Site E-commerce}}$  $\color{red}{\text{[BONUS]}}$   
+Extraire les données  
+
+$\color{blue}{\text{TP 10 Location ski}}$  $\color{red}{\text{[SUPER BONUS]}}$   __difficulté : bucheron canadien__ :cactus::cactus::cactus::cactus:  
+Extraire les données 
+
